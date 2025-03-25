@@ -1,0 +1,295 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #e0eafc, #cfdef3); /* Gradient background */
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px;
+    padding: 30px;
+    background: #fff;
+    border-radius: 12px; /* More rounded corners */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15); /* Stronger shadow */
+    text-align: center;
+}
+
+.header {
+    font-size: 2.2em; /* Slightly larger header */
+    color: #2c3e50;
+    margin-bottom: 25px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #bdc3c7;
+}
+
+.input-group {
+    margin-bottom: 25px; /* More spacing between input groups */
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #777;
+    font-weight: 500;
+}
+
+.input-group input,
+.input-group textarea,
+.input-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d2d6de;
+    border-radius: 6px;
+    font-size: 1em;
+    margin-top: 8px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075);
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.input-group input:focus,
+.input-group textarea:focus,
+.input-group select:focus {
+    border-color: #5cb85c;
+    outline: 0;
+    box-shadow: 0 0 5px rgba(107, 183, 107, 0.5);
+}
+
+.btn {
+    padding: 14px 22px; /* Larger buttons */
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    margin-top: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.btn-green {
+    background-color: #5cb85c;
+}
+
+.btn-green:hover {
+    background-color: #4cae4c;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Stronger hover shadow */
+}
+
+.btn-blue {
+    background-color: #337ab7;
+}
+
+.btn-blue:hover {
+    background-color: #286090;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-red {
+    background-color: #d9534f;
+}
+
+.btn-red:hover {
+    background-color: #c9302c;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-gray {
+    background-color: #777;
+}
+
+.btn-gray:hover {
+    background-color: #555;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-yellow {
+    background-color: #f0ad4e;
+    color: white;
+}
+
+.btn-yellow:hover {
+    background-color: #eea236;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+}
+
+.link {
+    color: #337ab7;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.link:hover {
+    text-decoration: underline;
+    color: #286090;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Slightly larger cards */
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.card {
+    padding: 25px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+    margin-bottom: 12px;
+    color: #444;
+}
+
+.faq-item {
+    text-align: left;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #f9f9f9;
+    transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+    background: #f0f0f0;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.faq-item h3 {
+    margin-bottom: 8px;
+    color: #333;
+    font-size: 1.2em;
+}
+
+.faq-item p {
+    margin-top: 12px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.faq-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.message {
+    color: #007BFF;
+    margin-top: 12px;
+    font-size: 1em;
+}
+
+.hidden {
+    display: none;
+}
+
+.data-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 25px;
+}
+
+.user-data {
+    background: #f8f8f8;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 18px;
+    margin-bottom: 18px;
+}
+
+.user-data p {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.qr-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.qr-container img {
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 6px;
+}
+
+.password-input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.password-input-container input {
+    padding-right: 35px; /* More space for the eye icon */
+}
+
+.password-toggle {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 1.3em;
+    color: #888;
+    transition: color 0.3s ease;
+}
+
+.password-toggle:hover {
+    color: #555;
+}
+
+.phone-input-container {
+    display: flex;
+    align-items: center;
+}
+
+.phone-input-container select {
+    width: auto;
+    margin-right: 12px;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
